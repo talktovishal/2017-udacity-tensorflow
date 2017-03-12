@@ -1,0 +1,93 @@
+
+Installing Tensorflow on Windows
+http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/
+https://www.tensorflow.org/get_started/os_setup
+python /usr/local/lib/python2.7/dist-packages/tensorflow/models/image/mnist/convolutional.py
+
+http://www.heatonresearch.com/2017/01/01/tensorflow-windows-gpu.html
+
+C:\Users\vishalc\AppData\Local\Programs\Python\Python35\python.exe C:\Users\vishalc\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\models\image\mnist\convolutional.py
+
+
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0rc0-cp35-cp35m-win_amd64.whl
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-1.0.0rc2-cp35-cp35m-win_amd64.whl
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-win_amd64.whl 
+
+
+pip3 install --upgrade -I setuptools
+
+https://github.com/tensorflow/tensorflow/issues/6136
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/install/install_windows.md
+https://review.udacity.com/#!/rubrics/723/view
+
+pip3 install --upgrade tqdm
+pip3 install --upgrade matplotlib
+pip3 install --upgrade scikit-learn
+pip3 install --upgrade jupyter
+pip3 install --upgrade scipy
+
+
+>>>> cpu version
+Windows Instructions
+We've provided a Conda environment file for you to easily install all the necessary packages. In the intro-to-tensorflow directory, enter
+
+conda env create -f C:\Users\vishalc\OneDrive\Documents\GitHub\2017-udacity-tensorflow\deep-learning\intro-to-tensorflow\environment_win.yml
+This will create an environment called dlnd-tf-lab. You can enter the environment with the command
+
+activate dlnd-tf-lab
+All the necessary packages should be installed for you.
+=====================================================================
+
+conda install tqdm
+conda install matplotlib
+conda install scikit-learn
+conda install jupyter
+conda install scipy
+jupyter notebook
+
+
+
+    matplotlib:   2.0.0-np112py35_0
+    numpy:        1.12.0-py35_0
+    pandas:       0.19.2-np112py35_1
+    scikit-learn: 0.18.1-np112py35_1
+    scipy:        0.18.1-np112py35_1
+
+
+http://docs.floydhub.com/guides/jupyter
+
+Additional dependencies
+
+If you have any additional python dependencies, you can also add a floyd_requirements.txt file to the notebook directory before floyd run. The packages specified there will be installed before running the jupyter server
+
+==========================================================================
+
+floyd:
+floyd init project2
+floyd run --mode jupyter --env tensorflow-1.0 --gpu
+
+
+floyd stop eVziqr5ekoNyULofMPrAMT
+
+
+
+
+ResourceExhaustedError                    Traceback (most recent call last)
+/usr/local/lib/python3.5/site-packages/tensorflow/python/client/session.py in _do_call(self, fn, *args)
+   1021     try:
+-> 1022       return fn(*args)
+   1023     except errors.OpError as e:
+
+
+
+================================================================================
+
+aws
+
+Type ssh udacity@X.X.X.X
+X.X.X.X is the IPv4 Public IP found in AWS.
+Authenticate with the password "udacity".
+
+http://ec2-52-91-223-235.compute-1.amazonaws.com:8888
+
+X.X.X.X:8888
