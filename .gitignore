@@ -8,11 +8,19 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+class-github-repo/
+
 # Windows Installer files
 *.cab
 *.msi
 *.msm
 *.msp
+# don't upload videos and stuff
+*.zip
+*.gz
+*.p
+AwsUdacityTalktovishal.*
+*.mp4
 
 # Windows shortcuts
 *.lnk
