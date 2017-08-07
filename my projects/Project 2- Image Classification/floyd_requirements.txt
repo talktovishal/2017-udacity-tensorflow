@@ -1,0 +1,7 @@
+tqdm
+matplotlib
+scikit-learn
+jupyter
+scipy
+
+floyd run  --gpu --env tensorflow-1.0 --mode jupyter
