@@ -12,7 +12,7 @@ C:\Users\vishalc\AppData\Local\Programs\Python\Python35\python.exe C:\Users\vish
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-0.12.0rc0-cp35-cp35m-win_amd64.whl
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-1.0.0rc2-cp35-cp35m-win_amd64.whl
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-win_amd64.whl 
-
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow_gpu-1.2.1-cp35-cp35m-win_amd64.whl
 
 pip3 install --upgrade -I setuptools
 
@@ -68,11 +68,10 @@ If you have any additional python dependencies, you can also add a floyd_require
 
 floyd:
 http://docs.floydhub.com/guides/basics/login/
+
 floyd login
-
-
-floyd init exercise-tensorboard
-floyd run --mode jupyter --env tensorflow-1.0 --gpu
+floyd init project4
+floyd run --mode jupyter --env tensorflow-1.2 --gpu
 
 
 floyd stop eVziqr5ekoNyULofMPrAMT
