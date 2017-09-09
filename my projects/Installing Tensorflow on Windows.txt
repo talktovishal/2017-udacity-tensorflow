@@ -70,8 +70,11 @@ floyd:
 http://docs.floydhub.com/guides/basics/login/
 
 floyd login
-floyd init project4
-floyd run --mode jupyter --env tensorflow-1.2 --gpu
+<create>
+floyd init project5
+<init>
+floyd init project5
+floyd run --mode jupyter --env tensorflow-1.2 --gpu --data R5KrjnANiKVhLWAkpXhNBe
 
 
 floyd stop eVziqr5ekoNyULofMPrAMT
@@ -100,3 +103,6 @@ ec2-52-91-223-235.compute-1.amazonaws.com
 http://ec2-52-91-223-235.compute-1.amazonaws.com:8888
 
 X.X.X.X:8888
+
+
+il vaut mieux addresser au bon dieu qu’à ses saints
